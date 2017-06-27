@@ -1,13 +1,9 @@
 <!-- ======= views/menu.erb ======  -->
-<div class="menu_item">
-  <a href="home">Home</a>
-</div>
-<div class="menu_item">
-  <a href="about">About</a>
-</div>
-<div class="menu_item">
-  <a href="contact">Contact</a>
-</div>
-<div class="menu_item">
-  <a href="gallery">Gallery</a>
+<!-- main menu loop -->
+
+<div id="menu_item-box">
+  <% main_menu = ["home","gallery", "contact"] %>
+    <% for x in main_menu %>
+      <div class="menu_item"><a href=<%=x%>> <%=x%> </a></div>
+    <% end %>
 </div>
